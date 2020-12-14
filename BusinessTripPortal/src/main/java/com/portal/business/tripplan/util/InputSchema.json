@@ -1,0 +1,21 @@
+{
+   "$schema": "http://json-schema.org/draft-04/schema#",
+   "title": "BusinessTrip",
+   "description": "Business Trip",
+   "type": "object",
+	
+   "properties": {
+	
+      "source": {
+         "description": "The unique identifier for a product",
+         "type": "integer"
+      },
+		
+      "destination": {
+         "description": "Name of the product",
+         "type": "string"
+      },
+	
+   "required": ["source", "destination"]
+  }
+ }

@@ -1,0 +1,23 @@
+spring:
+   profiles:
+     active: dev
+   application:
+    name: Business Portal
+
+source:
+  content: C:/dev/portal/webcontent/city.txt
+  
+email: 
+thread-pool: 10
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl.defaultZone: http://eurekaserver:8761/eureka
+  
+logging:
+  level:
+    org.springframework: ERROR
+    com.test: DEBUG
+    location: 
